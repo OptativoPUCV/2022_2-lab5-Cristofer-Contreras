@@ -68,3 +68,23 @@ Mon 26 Sep 2022 12:19:03 AM UTC:
  tests:  4|7
 total_score: 5/70
 1062f3b
+Mon 26 Sep 2022 12:26:02 AM UTC: 
+ treemap.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:79:36: error: ‘TreeNode’ has no member named ‘value’
+   79 |     if(is_equal(tree, tree->current->value, key)==1)
+      |                                    ^~
+treemap.c:80:27: error: ‘TreeNode’ has no member named ‘key’
+   80 |       return tree->current->key;
+      |                           ^~
+treemap.c:81:43: error: ‘TreeNode’ has no member named ‘key’
+   81 |     else if(tree->lower_than(tree->current->key, key)==1)
+      |                                           ^~
+treemap.c:82:43: error: expected ‘;’ before ‘:’ token
+   82 |       tree->current = tree->current->right:
+      |                                           ^
+      |                                           ;
+Compilation failed
+7021060
