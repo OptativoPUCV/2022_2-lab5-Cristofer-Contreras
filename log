@@ -198,3 +198,15 @@ Mon 26 Sep 2022 12:58:38 AM UTC:
  tests:  18|3
 total_score: 40/70
 5c7c34f
+Mon 26 Sep 2022 01:06:14 AM UTC: 
+ treemap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+treemap.c:188:5: error: expected identifier or ‘(’ before ‘return’
+  188 |     return NULL;
+      |     ^~~~~~
+treemap.c:189:1: error: expected identifier or ‘(’ before ‘}’ token
+  189 | }
+      | ^
+Compilation failed
+3c716f9

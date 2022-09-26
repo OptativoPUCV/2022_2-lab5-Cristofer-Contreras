@@ -180,6 +180,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
+  TreeNode * X = tree->root;
+  tree->current=minimum(X);
+  if(tree->current==NULL)return NULL;
+  return tree->current->pair;
+}
     return NULL;
 }
 
