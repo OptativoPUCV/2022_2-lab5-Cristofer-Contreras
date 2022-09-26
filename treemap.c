@@ -55,14 +55,12 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   
   searchTreeMap(tree, key);
   nodoAux = tree->current;
-  newNode->parent = nodoAux;
-
+  //newNode->parent = nodoAux;
   if (tree->lower_than(nodoAux->pair->key, key) == 1) {
     nodoAux->right = newNode;
   }else if (tree->lower_than(key, nodoAux->pair->key) == 1) {
     nodoAux->left = newNode;
-  }
-    
+  }  
   tree->current = newNode;
 
 }
