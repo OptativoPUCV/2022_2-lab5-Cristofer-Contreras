@@ -124,3 +124,17 @@ treemap.c:81:43: error: ‘TreeNode’ has no member named ‘key’
       |                                           ^~
 Compilation failed
 6307f36
+Mon 26 Sep 2022 12:29:13 AM UTC: 
+ treemap.c | 21 ++++++++++++---------
+ 1 file changed, 12 insertions(+), 9 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:83:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   83 |       if(is_equal(tree, newNodo->pair->key, key) == 1)
+      |       ^~
+treemap.c:85:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   85 |         return (newNodo->pair);
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+da07c64
