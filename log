@@ -62,3 +62,9 @@ treemap.c:41:10: error: unused variable ‘pair’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8de1377
+Mon 26 Sep 2022 12:19:03 AM UTC: 
+ treemap.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+ tests:  4|7
+total_score: 5/70
+1062f3b
